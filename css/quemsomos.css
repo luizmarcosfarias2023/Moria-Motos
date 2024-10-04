@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+:root{
+    --cor01: #7d858c;
+    --cor02: #2b7b8c;
+    --cor03: #bfbbb8;
+    --cor04: #f2f2f2;
+    --cor05: #0d0d0d;
+    --fonte-padrao: Arial, Helvetica, Sans-Serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    font-family: var(--fonte-padrao);
+}
+/*Logo e cabeçalho*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: red;
+    z-index: 1000;
+}
+
+header .logo{
+    height: auto;
+
+}
+/*Endereços e televendas*/
+.divsao, .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.endereco{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.705);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13.5px;
+    color: white;
+    text-align: left;
+    height: auto;
+    margin-right: 300px;
+    margin-bottom: 12px;
+}
+
+.vendas{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.705);
+    text-align: right;
+    color: white;
+    height: auto;
+    margin-top: -40px;
+    margin-right:90px;
+}
+img.telefone{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 30px;
+    height: auto;
+
+    margin-left: 1070px;
+    margin-top: 25px;
+}
+img.localigacao{
+    position: absolute;
+    top: 32px;
+    right:510px;
+    width: 27px;
+    height: auto;
+    margin-left: 500px;
+}
+
+/*Menu de navegação*/
+nav{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    padding: 14.5px;
+    background-color: rgba(175, 173, 175, 0.37);
+    z-index: 999;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+a:hover{
+    background-color: rgba(7, 7, 7, 0.829);
+    color: white;
+    border-radius: 0 0 5px 5px;
+    transition-duration: 0.5s;
+}
+main .main-box{
+    padding-bottom: 800px;
+}
+/*Titulo*/
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color: black;
+    padding: 15px 0;
+    margin-top: 130px;
+    margin-bottom: -20px;
+}
+
+.artigos{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.671);
+    background-color: rgba(240, 10, 10, 0.856);
+    color:white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    border-radius: 9px;
+    width:1150px;
+    padding: 15px;
+    margin: 20px auto;
+}
+/*Cards*/
+div .ajuste{
+    padding: 30px;
+}
+
+div .box-cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 100px;
+}
+
+div .box-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.705);
+    border-color: white;
+    padding: 30px;
+    padding-bottom: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+    min-height: 350px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+div .title-box{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+img .imagem{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+
+}
+/*Rodape*/
+.footer-box{
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    
+
+}
+div .div-box{
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    font-style: normal
+}
